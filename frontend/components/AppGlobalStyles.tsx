@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 export const GlobalMuiTheme = createMuiTheme({
   palette: {
     primary: {
-      main: '#6dc787',
+      main: '#57d2f3',
       contrastText: '#FFF',
     },
     secondary: {
