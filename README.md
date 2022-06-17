@@ -38,6 +38,14 @@ Foram utilizadas algumas tecnologias no desenvolvimento:
 - [Mongoose](https://mongoosejs.com/) - Elegant mongodb object modeling for node.js.
 - [JWT](https://www.npmjs.com/package/jsonwebtoken) - JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties.
 
+## Importante
+
+Caso você utilize esta estrutura em produção, não esqueça de alterar o token presente em: `backend/src/config/auth.json`, para um token único e privado de sua preferência.
+
+## Instalação
+
+Instale as dependências e inicie o server:
+
 ```sh
 cd backend
 yarn
