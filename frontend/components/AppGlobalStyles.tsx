@@ -1,16 +1,19 @@
 import { createGlobalStyle } from "styled-components"
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@material-ui/core/styles';
 
 export const GlobalStyle = createGlobalStyle`
   body, input, button {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
   }
 `
 
-export const GlobalMuiTheme = createMuiTheme({
+export const GlobalMuiTheme = createTheme({
+  typography: {
+    fontFamily: `'Poppins', 'Roboto', Arial, Helvetica, sans-serif`,
+  },
   palette: {
     primary: {
-      main: '#57d2f3',
+      main: '#087ea4',
       contrastText: '#FFF',
     },
     secondary: {

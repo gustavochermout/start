@@ -21,4 +21,13 @@ const Home = () => (
   </>
 );
 
+Home.getInitialProps = ({ res }) => {
+  if (res) {
+    res.writeHead(301, { Location: '/app' });
+    res.end();
+  }
+
+  return {};
+};
+
 export default Home;

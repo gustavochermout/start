@@ -14,6 +14,9 @@ mongoose.connect(`mongodb://${usuarioDb}:${pwDb}@${host}:27017/${nameDB}`, {
 module.exports = mongoose;
 
 /*
+MongoDB create container
+1. docker run --name mongodb -d -p 27017:27017 mongo:5.0
+
 MongoDB create user
 
 1. use start

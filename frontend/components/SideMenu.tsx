@@ -120,7 +120,7 @@ const SideMenu = ({ children, offlineHeader }: SideMenuProps) => {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open
         })}
-        elevation={1}
+        elevation={0}
       >
         <Toolbar className={classes.toolbarClose}>
           {!offlineHeader &&
