@@ -1,8 +1,8 @@
 import TextField, { TextFieldProps } from '@material-ui/core/TextField';
 import EmptyFieldAlert from './EmptyFieldAlert';
-import { makeStyles, Box } from '@material-ui/core';
+import { makeStyles, Box, Theme } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   field: {
     marginTop: theme.spacing(1.5),
   }

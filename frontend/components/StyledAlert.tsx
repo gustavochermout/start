@@ -1,7 +1,7 @@
 import Alert, { AlertProps } from '@material-ui/lab/Alert';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Theme } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   outlinedAlert: {
     marginTop: theme.spacing(1.5),
     fontSize: 13,
@@ -14,9 +14,9 @@ const StyledAlert = (props: AlertProps) => {
   const classes = useStyles();
 
   return (
-    <Alert 
-      className={classes.outlinedAlert} 
-      variant="outlined" 
+    <Alert
+      className={classes.outlinedAlert}
+      variant="outlined"
       {...props}
     >
       {props.children}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import { Link as LinkUi, CircularProgress, Box } from '@material-ui/core';
+import { Link as LinkUi, CircularProgress, Box, Theme } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -15,7 +15,7 @@ import { login } from '../core/services/auth';
 import Head from 'next/head';
 import Link from 'next/link';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   paper: {
     minHeight: '100vh',
     display: 'flex',

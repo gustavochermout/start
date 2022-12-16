@@ -18,11 +18,11 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import Link from 'next/link';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { logout } from '../core/services/auth';
-import { Typography } from "@material-ui/core";
+import { Theme, Typography } from "@material-ui/core";
 
 const drawerWidth = 200;
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   root: {
     display: "flex"
   },

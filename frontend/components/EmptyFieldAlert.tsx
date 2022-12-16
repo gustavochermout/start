@@ -1,9 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, Theme } from '@material-ui/core/styles';
 import Alert from '@material-ui/lab/Alert';
 import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   alert: {
     margin: theme.spacing(-0.5, 0, 0),
     padding: theme.spacing(0, 0, 0),

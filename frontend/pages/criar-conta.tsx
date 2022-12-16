@@ -1,4 +1,4 @@
-import { Container, makeStyles, Typography, Avatar, Box, Button } from "@material-ui/core";
+import { Container, makeStyles, Typography, Avatar, Box, Button, Theme } from "@material-ui/core";
 import Head from "next/head";
 import PersonIcon from '@material-ui/icons/Person';
 import TextFieldForm from "../components/TextFieldForm";
@@ -11,7 +11,7 @@ import { login } from "../core/services/auth";
 import { setAuth } from "../redux/auth/actions";
 import { useDispatch } from "react-redux";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   paper: {
     minHeight: '100vh',
     display: 'flex',
